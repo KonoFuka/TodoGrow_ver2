@@ -28,6 +28,12 @@ class AddTodoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func save(){
+        let item = TodoItem()
+        item.title = titleTextField.text ?? ""
+        item.day = 
+    }
+    
     func creareItem(item: TodoItem) {
         try! realm.write {
             realm.add(item)
